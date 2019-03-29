@@ -80,5 +80,7 @@ app.use(function(err, req, res, next) {
 
 app.listen(3000)
 //cnpm i supervisor -g 全局安装此模块 使用supervisor 应用名称  每次修改脚本无需重启
+//cnpm i nodemon -g 全局安装此模块 使用nodemon 应用名称  每次修改脚本无需重启 可以随时输入rs回车进行手动重启，非常方便
+//相比 supervisor ，nodemon 的优点包括：更轻量级，内存占用更小。使用更加方便，更容易进行扩展等。
 //cnpm i pm2 -g 全局安装此模块 使用 pm2 start 应用名称 pm2守护进程启动
 module.exports = app;
